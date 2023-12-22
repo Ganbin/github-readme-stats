@@ -47,6 +47,7 @@ const GRAPHQL_STATS_QUERY = `
       contributionsCollection {
         totalCommitContributions,
         totalPullRequestReviewContributions
+        restrictedContributionsCount
       }
       repositoriesContributedTo(first: 1, contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]) {
         totalCount
